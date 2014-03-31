@@ -19,7 +19,7 @@ Code above or project have some disadvantages:
 Dependencies: BOOST >= 1.55.0, Google Test Framework >= 1.7.0, Microsoft Visual Studio >= 2013
 
 Let see:
-	* "codeSample\codeSample.hpp"
-	* "codeSample\codeSample.cpp"
-	* "test\test.cpp"
-	* "codeSample\main.cpp"
+  * "codeSample\codeSample.hpp"
+  * "codeSample\codeSample.cpp"
+  * "test\test.cpp"
+  * "codeSample\main.cpp"
