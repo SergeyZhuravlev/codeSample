@@ -7,6 +7,7 @@ Find path on 2D map by simplest breadth-first search algorithm.
 
 I like use BOOST-\STL- algorithms and write pure code with const-correctness and small self-documented functions,
  but can change my code style if required by Code Style Guidelines.
+Code written with strong exception safety guarantee.
 
 Code above or project have some disadvantages:
   * Not subdivided into several files;

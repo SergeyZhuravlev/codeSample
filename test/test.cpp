@@ -172,6 +172,8 @@ namespace {
     EXPECT_FALSE(a.inRange({0, nl}));
     EXPECT_FALSE(a.inRange({nl, nl}));
     EXPECT_FALSE(b.inRange({nl, nl}));
+    EXPECT_THROW((a[{3, 1}]), out_of_range);
+    EXPECT_THROW((a[{1, 2}]), out_of_range);
   }
   
   TEST(outputPathTest, simple){
