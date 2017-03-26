@@ -1,4 +1,4 @@
-codeSample
+C++ codeSample
 ==========
 
 Simple example of my code for paralympic game at some Internet forum. 
