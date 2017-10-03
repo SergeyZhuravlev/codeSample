@@ -1,3 +1,4 @@
+#include <tchar.h>
 #include "codeSample.hpp"
 #include <iostream>
 #include <string>
