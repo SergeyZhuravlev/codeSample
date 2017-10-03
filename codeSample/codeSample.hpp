@@ -98,7 +98,7 @@ public:
     this->data = ::std::move(source.data);
     return *this;
   }
-  Matrix(Repository data) BOOST_NOEXCEPT_IF(BOOST_NOEXCEPT_EXPR(Repository(::std::move(source.data)))) :
+  Matrix(Repository source) BOOST_NOEXCEPT_IF(BOOST_NOEXCEPT_EXPR(Repository(::std::move(source)))) :
     data(::std::move(data))
   {
     assert(checkRectangularity(this->data));
@@ -146,7 +146,7 @@ public:
   Map(Repository map) BOOST_NOEXCEPT_IF(BOOST_NOEXCEPT_EXPR(Base(::std::move(map)))) :
     Base(::std::move(map))
   {}
-  Map& operator=(Map source) BOOST_NOEXCEPT_IF(BOOST_NOEXCEPT_EXPR(::std::declval<Base&>()=(::std::move(map)))) {
+  Map& operator=(Map source) BOOST_NOEXCEPT_IF(BOOST_NOEXCEPT_EXPR(::std::declval<Base&>()=(::std::move(source)))) {
     this->Base::operator=(::std::move(source));
     return *this;
   }
